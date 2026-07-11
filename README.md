@@ -1,4 +1,4 @@
-# Sistema de Transcripción y Traducción en Tiempo Real Orientado a la Inclusión Educativa Universitaria
+# Modelado y Diseño de un Sistema de Transcripción y Traducción en Tiempo Real Orientado a la Inclusión Educativa Universitaria
 
 Trabajo Fin de Grado — Grado en Ingeniería Informática (Universidad de Alicante)
 Autor: Rubén Calvo Mollón | Tutor: Rafael Rodrigo Guillén
@@ -14,16 +14,7 @@ Antes de arrancar el sistema, necesitas tener preparado lo siguiente:
 
 ## Instalación
 
-### 1. Descargar el repositorio
-
-Clona el repositorio o descárgalo como ZIP desde GitHub:
-
-```bash
-git clone https://github.com/rcm144-ua/TFG_Ruben_Calvo_Mollon_2026.git
-cd TFG_Ruben_Calvo_Mollon_2026
-```
-
-### 2. Instalar las dependencias del cliente
+### 1. Instalar las dependencias del cliente
 
 El cliente necesita las siguientes librerías de Python:
 
@@ -31,42 +22,27 @@ El cliente necesita las siguientes librerías de Python:
 - `sounddevice`
 - `numpy`
 
-Instálalas con:
-
-```bash
-pip install websockets sounddevice numpy
-```
-
-O, si el repositorio incluye un archivo `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
-```
-
-`tkinter` no necesita instalación aparte en la mayoría de sistemas, ya que viene incluido con Python. En algunas distribuciones de Linux puede requerir instalarlo por separado (`sudo apt install python3-tk`).
 
 ### 3. Dependencias del servidor
 
-No es necesario instalar nada en tu propio ordenador para el servidor, ya que se ejecuta íntegramente en Google Colab, que ya incluye la mayoría de librerías necesarias (`torch`, `numpy`). Las únicas que instala el propio notebook al ejecutarse son:
+No es necesario instalar nada en tu propio ordenador para el servidor, ya que se ejecuta completamente en Google Colab, que ya incluye la mayoría de librerías básicas necesarias (`torch`, `numpy`). Sin embargo, las siguientes dependencias si que necsitan ser intaladas al iniciar el cuaderno al cambiar de entorno de ejecución:
 
 - `faster-whisper`
 - `pyngrok`
 - `websockets`
 
-Estas se instalan automáticamente si el notebook incluye una celda con:
+Para ello, antes de ejecutar la celda del código del servidor hay que ejecutar previamente la siguiente celda de instalación de dependencias.
 
 ```bash
-!pip install faster-whisper pyngrok websockets
+!pip install -q faster-whisper pyngrok websockets
 ```
-
-Si tu copia del notebook no la tiene, añádela como primera celda antes de ejecutar el resto.
 
 ## Puesta en marcha
 
 ### Paso 1: Configurar y arrancar el servidor (Google Colab)
 
 1. Sube o abre `Servidor.ipynb` en [Google Colab](https://colab.research.google.com/).
-2. Ve a **Entorno de ejecución > Cambiar tipo de entorno de ejecución** y selecciona **GPU** (recomendado: T4). Es importante para que la transcripción funcione con una latencia razonable.
+2. Ve a **Entorno de ejecución > Cambiar tipo de entorno de ejecución** y selecciona **GPU** (El trabajo y sus pruebas se han ejecutado en T4).
 3. Crea una cuenta gratuita en [ngrok.com](https://ngrok.com) si todavía no tienes una.
 4. Copia tu Authtoken personal desde el panel de ngrok:
    👉 https://dashboard.ngrok.com/get-started/your-authtoken
