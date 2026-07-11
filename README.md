@@ -3,15 +3,6 @@
 Trabajo Fin de Grado — Grado en Ingeniería Informática (Universidad de Alicante)
 Autor: Rubén Calvo Mollón | Tutor: Rafael Rodrigo Guillén
 
-## Descripción del sistema
-
-El sistema está compuesto por dos módulos independientes que se comunican mediante WebSocket:
-
-- **Servidor** (`Servidor.ipynb`): se ejecuta en Google Colab. Carga un modelo Whisper (mediante `faster-whisper`) y expone un servidor WebSocket accesible desde Internet a través de un túnel creado con ngrok. Recibe audio en streaming, lo transcribe y, opcionalmente, lo traduce al inglés.
-- **Cliente** (`cliente.py`): se ejecuta en el ordenador del usuario. Captura el audio del micrófono, lo envía al servidor en tiempo real y muestra los subtítulos generados en una ventana gráfica (Tkinter).
-
-El flujo completo es: micrófono → cliente local → servidor en la nube (Colab + GPU) → subtítulos en pantalla.
-
 ## Requisitos previos
 
 Antes de arrancar el sistema, necesitas tener preparado lo siguiente:
@@ -20,7 +11,6 @@ Antes de arrancar el sistema, necesitas tener preparado lo siguiente:
 - Una cuenta gratuita en [ngrok](https://ngrok.com), necesaria para exponer el servidor a Internet.
 - Python 3.10 o superior instalado en el ordenador donde se ejecutará el cliente.
 - Un micrófono conectado y funcionando en ese mismo ordenador.
-- Git instalado (opcional, solo si vas a clonar el repositorio en lugar de descargarlo como ZIP).
 
 ## Instalación
 
