@@ -1,4 +1,4 @@
-# Sistema de Traducción en Tiempo Real Orientado a la Inclusión Educativa Universitaria
+# Sistema de Transcripción y Traducción en Tiempo Real Orientado a la Inclusión Educativa Universitaria
 
 Trabajo Fin de Grado — Grado en Ingeniería Informática (Universidad de Alicante)
 Autor: Rubén Calvo Mollón | Tutor: Rafael Rodrigo Guillén
