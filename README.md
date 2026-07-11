@@ -82,8 +82,8 @@ Las sesiones gratuitas de Google Colab se desconectan tras un periodo de inactiv
    ```
 
 2. Sustituir `SERVER_URL` por la URL copiada del cuaderno del servidor.
-3. Asegúurarse de que `SECRET` coincide exactamente con el valor configurado en el servidor. Este se trata de la clave de autentiacación. (Se ha dejado los valores tanto de la URL como del SECRET los mismos que se han usado en las ejecuciones propias)
-5. Ejecuta el cliente
+3. Asegurarse de que `SECRET` coincide exactamente con el valor configurado en el servidor. Este se trata de la clave de autentiacación. (Se ha dejado los valores tanto de la URL como del SECRET los mismos que se han usado en las ejecuciones propias)
+5. Ejecutar el cliente
 
 6. Se abrirá una ventana con los subtítulos en tiempo real. Hablar cerca del micrófono; tras unos segundos, el texto transcrito o traducido aparecerá en pantalla. La primera vez puede tardar mas de la cuenta en que aparezcan los subtitulos.
 7. Usar los botones de la parte superior de la ventana para cambiar entre modo **Español** (transcripción) e **Inglés** (traducción).
