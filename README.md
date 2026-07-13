@@ -68,9 +68,9 @@ Para ello, antes de ejecutar la celda del código del servidor hay que ejecutar 
    wss://xxxxxxxxxx.ngrok-free.app
    ```
 
-   Copia esta URL, la necesitarás en el siguiente paso.
+   Copiar esta URL, será necesaria en el siguiente paso.
 
-Las sesiones gratuitas de Google Colab se desconectan tras un periodo de inactividad o tras varias horas de uso continuado. Si esto ocurre, vuelve a ejecutar el cuaderno.
+Las sesiones gratuitas de Google Colab se desconectan tras un periodo de inactividad o tras varias horas de uso continuado. Si esto ocurre, volver a ejecutar el cuaderno.
 
 ### Paso 2: Configurar y arrancar el cliente (equipo local)
 
@@ -85,7 +85,7 @@ Las sesiones gratuitas de Google Colab se desconectan tras un periodo de inactiv
 3. Asegurarse de que `SECRET` coincide exactamente con el valor configurado en el servidor. Este se trata de la clave de autentiacación. (Se ha dejado los valores tanto de la URL como del SECRET los mismos que se han usado en las ejecuciones propias)
 5. Ejecutar el cliente
 
-6. Se abrirá una ventana con los subtítulos en tiempo real. Hablar cerca del micrófono; tras unos segundos, el texto transcrito o traducido aparecerá en pantalla. La primera vez puede tardar mas de la cuenta en que aparezcan los subtitulos.
+6. Se abrirá una ventana con los subtítulos en tiempo real. Hablar cerca del micrófono. Después de unos segundos, el texto transcrito o traducido aparecerá en pantalla. La primera vez puede tardar mas de la cuenta en que aparezcan los subtítulos.
 7. Usar los botones de la parte superior de la ventana para cambiar entre modo **Español** (transcripción) e **Inglés** (traducción).
 
 
